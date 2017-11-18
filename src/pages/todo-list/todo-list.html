@@ -1,0 +1,42 @@
+
+<header>
+
+    <h3>todoList</h3>
+
+</header>
+
+
+<div class="container" padding *ngIf="todoList">
+  <div class="cards-container" *ngFor="let value of todoList">
+  <div class="card" >
+      <div class="header">
+       Todo
+      </div>
+
+    <div class="main-content desc-data"> 
+      <div>
+        Title: {{value.title}}
+      </div>
+      <div>
+       
+        <div class="border">
+            <label>Complete Status</label>
+            <input type="checkbox" color="dark" [checked]="value.completed" [(ngModel)]="value.completed" (click)="updateDb(todoList)">
+          </div>        
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+            <div>
+                
+                <input placeholder="Create new todo" type="text" [(ngModel)]="add" value="">
+
+          <button ion-button icon-only (click)="addNewTodo()" [disabled]='add == ""'>
+              +
+            </button>
+            </div>
+</footer>

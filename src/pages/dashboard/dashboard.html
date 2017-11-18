@@ -1,0 +1,48 @@
+
+<header>
+
+    <h3>User List</h3>
+  
+
+</header>
+
+
+<div class="container" >
+  <div class="cards-container" *ngFor = "let obj of users">
+    <div class="card">
+      <div class="header">
+        User Description
+      </div>
+      <div class="main-content desc-data"> 
+        <div>
+          <i class="fa fa-user" aria-hidden="true"></i>
+          {{obj.name}}
+        </div>
+        <div>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          {{obj.email}}
+        </div>
+        <div>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          {{obj.address.suite}}, {{ obj.address.street}}, {{obj.address.city}}, {{obj.address.zipcode}}
+        </div>
+        <div>
+          <i class="fa fa-mobile" aria-hidden="true"></i>
+          {{obj.phone}}
+        </div>
+        <div>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+          {{obj.website}}
+        </div> 
+        <div>
+          <i class="fa fa-industry" aria-hidden="true"></i>
+          {{obj.company.name}}
+        </div>        
+        <div>
+        <button margin-top margin-bottom (click)="userSelect(obj)"  ion-button>View Todos</button>  
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+

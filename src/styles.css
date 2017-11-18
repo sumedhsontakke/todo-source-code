@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding:0;
+        font-family: helvetica;
+}
+
+header {
+    width: 100%;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 5px gray;
+}
+
+header h3 {
+    margin: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+        margin-bottom: 60px;
+}
+
+.cards-container {
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    padding-top: 0px;
+    min-height: 130px;
+}
+
+.card .header {
+    margin: 0 -15px;
+    padding: 10px 15px;
+    background-color: #9a9a9a;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card .desc-data > div {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.card .desc-data > div
+ .fa {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    text-align: center;
+}
+
+.card .desc-data > div button {
+    margin-left: auto;
+    display: block;
+    padding: 10px 10px;
+    background-color: #a0a0de;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #fbfbfb;
+        box-shadow: 0 0 5px gray;
+}
+
+footer > div {
+    /* background-color: gray; */
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+footer input, footer button {
+    padding: 5px;
+}
+
+.loading{
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6705882352941176);
+    display:none;
+}
+
+.loading img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+}
